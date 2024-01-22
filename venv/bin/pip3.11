@@ -1,4 +1,4 @@
-#!/home/sandro-silva-de-paula/Documents/jango/venv/bin/python3
+#!/home/sandro-silva-de-paula/Documents/Django/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
