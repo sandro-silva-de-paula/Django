@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    home <s>via template</s>
-</body>
-</html>
+{% extends "global/base.html" %}
+{% block texto %}novo texto pelo index extendedo o base.html{% endblock texto %}
+{% block texto_2 %} testando blocos{% endblock texto_2 %}
