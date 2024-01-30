@@ -1,12 +1,24 @@
 {% include "global/partials/head.html" %}
+{% block text_p %} {{text_part}} {% endblock text_p %}
+
+<h1>{% block texto_base  %} hard code {% endblock texto_base %} </h1>
+<h1>{% block texto  %}{% endblock texto %} </h1>
+{% include "global/partials/paragrafo.html" %}
+<h1>{% block text_para  %} {{text_parag}} {% endblock text_para %} </h1>
 
 
-    <h1>{% block texto_base  %}BASE{% endblock texto_base %} </h1>
-    <h1>{% block texto  %}BASE{% endblock texto %} </h1>
-    {% include "global/partials/paragrafo.html" %}
-    {% include "global/partials/paragrafo.html" %}
-    {% include "global/partials/paragrafo.html" %}
-    {% include "global/partials/paragrafo.html" %}
-    <h1>{% block texto_2  %}RODAPE{% endblock texto_2 %} </h1>
+
+{% include "global/partials/menu.html" %}
+
+
+
+<h1>{% block texto_2  %}RODAPE{% endblock texto_2 %} </h1>
+
+<main class= 'content'>
+    {% block posts %}{% endblock posts %}
+   
+</main>
+
+
 </body>
 </html> 

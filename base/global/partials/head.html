@@ -1,9 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ title}} Pagina teste em Django</title>
+    <!-- <link rel="stylesheet" href="{% static "css/blue.css" %}">  -->
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
-    <i>Texte partial</i>
+    <i>  <h1>{% block text_p %} {% endblock text_p %}</h1> </i>

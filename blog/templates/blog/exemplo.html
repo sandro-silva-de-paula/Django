@@ -1,3 +1,7 @@
 {% extends "global/base.html" %}
-{% block texto %}EXEMPLO{% endblock texto %}
-{% block texto_2 %} testando blocos{% endblock texto_2 %}
+{% block texto %}{{text}}{% endblock texto %}
+{% block texto_2 %} {{text_2}}{% endblock texto_2 %} 
+
+{% block posts %}
+    {% include "global/partials/postblock.html" %}
+{% endblock posts %}
